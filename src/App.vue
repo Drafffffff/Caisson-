@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <div id="canvas" class=" bg-gray-100 "></div>
+    <div id="canvas" class="bg-gray-100"></div>
 
     <div class="control-outer flex-1">
-      <div class="outer " v-if="step === 1">
+      <div class="outer" v-if="step === 1">
         <p class="text-center py-4 text-xl">选择垂幔</p>
         <div class="select grid grid-cols-3 gap-4 p-2">
-          <div class="" @click="outerChange(1)">
-            <img src="./assets/outer/1.svg" alt="" />
+          <div class @click="outerChange(1)">
+            <img src="./assets/outer/1.svg" alt />
           </div>
-          <div class="" @click="outerChange(2)">
-            <img src="./assets/outer/2.svg" alt="" />
+          <div class @click="outerChange(2)">
+            <img src="./assets/outer/2.svg" alt />
           </div>
-          <div class="" @click="outerChange(1)">
-            <img src="./assets/outer/1.svg" alt="" />
+          <div class @click="outerChange(1)">
+            <img src="./assets/outer/1.svg" alt />
           </div>
-          <div class="" @click="outerChange(1)">
-            <img src="./assets/outer/1.svg" alt="" />
+          <div class @click="outerChange(1)">
+            <img src="./assets/outer/1.svg" alt />
           </div>
-          <div class="" @click="outerChange(1)">
-            <img src="./assets/outer/1.svg" alt="" />
+          <div class @click="outerChange(1)">
+            <img src="./assets/outer/1.svg" alt />
           </div>
-          <div class="" @click="outerChange(1)">
-            <img src="./assets/outer/1.svg" alt="" />
+          <div class @click="outerChange(1)">
+            <img src="./assets/outer/1.svg" alt />
           </div>
         </div>
         <div class="confirm py-10 px-4 flex justify-between">
@@ -40,26 +40,26 @@
           </button>
         </div>
       </div>
-      <div class="midder " v-if="step === 2">
+      <div class="midder" v-if="step === 2">
         <p class="text-center py-4 text-xl">选择边饰</p>
         <div class="select grid grid-cols-3 gap-4 p-2">
-          <div class="" @click="midderChange(1)">
-            <img src="./assets/midder/2.svg" alt="" />
+          <div class @click="midderChange(1)">
+            <img src="./assets/midder/2.svg" alt />
           </div>
-          <div class="" @click="midderChange(2)">
-            <img src="./assets/midder/1.svg" alt="" />
+          <div class @click="midderChange(2)">
+            <img src="./assets/midder/1.svg" alt />
           </div>
-          <div class="" @click="midderChange(3)">
-            <img src="./assets/midder/3.svg" alt="" />
+          <div class @click="midderChange(3)">
+            <img src="./assets/midder/3.svg" alt />
           </div>
-          <div class="" @click="midderChange(1)">
-            <img src="./assets/midder/1.svg" alt="" />
+          <div class @click="midderChange(1)">
+            <img src="./assets/midder/1.svg" alt />
           </div>
-          <div class="" @click="midderChange(1)">
-            <img src="./assets/midder/1.svg" alt="" />
+          <div class @click="midderChange(1)">
+            <img src="./assets/midder/1.svg" alt />
           </div>
-          <div class="" @click="midderChange(1)">
-            <img src="./assets/midder/1.svg" alt="" />
+          <div class @click="midderChange(1)">
+            <img src="./assets/midder/1.svg" alt />
           </div>
         </div>
         <div class="confirm py-10 px-4 flex justify-between">
@@ -89,26 +89,26 @@
           </div>
         </div>
       </div>
-      <div class="inner " v-if="step === 3">
+      <div class="inner" v-if="step === 3">
         <p class="text-center py-4 text-xl">选择井心</p>
         <div class="select grid grid-cols-3 gap-4 p-2">
-          <div class="" @click="innerChange(1)">
-            <img src="./assets/inner/1.svg" alt="" />
+          <div class @click="innerChange(1)">
+            <img src="./assets/inner/1.svg" alt />
           </div>
-          <div class="" @click="innerChange(2)">
-            <img src="./assets/inner/2.svg" alt="" />
+          <div class @click="innerChange(2)">
+            <img src="./assets/inner/2.svg" alt />
           </div>
-          <div class="" @click="innerChange(1)">
-            <img src="./assets/inner/1.svg" alt="" />
+          <div class @click="innerChange(1)">
+            <img src="./assets/inner/1.svg" alt />
           </div>
-          <div class="" @click="innerChange(1)">
-            <img src="./assets/inner/1.svg" alt="" />
+          <div class @click="innerChange(1)">
+            <img src="./assets/inner/1.svg" alt />
           </div>
-          <div class="" @click="innerChange(1)">
-            <img src="./assets/inner/1.svg" alt="" />
+          <div class @click="innerChange(1)">
+            <img src="./assets/inner/1.svg" alt />
           </div>
-          <div class="" @click="innerChange(1)">
-            <img src="./assets/inner/1.svg" alt="" />
+          <div class @click="innerChange(1)">
+            <img src="./assets/inner/1.svg" alt />
           </div>
         </div>
         <div class="confirm py-10 px-4 flex justify-between">
@@ -152,14 +152,20 @@ export default {
         inner: 0,
       },
       colors: [
-        "#E3C285",
-        "#AF6331",
-        "#9dc8b7",
+        "#f3ede4",
+        "#95c7b6",
+        "#b46530",
         "#A04924",
         "#dab05d",
         "#FFFFFF",
       ],
       outerData1: {
+        path1:
+          "M108.4 17.8c0-6.6-2-12.7-5.4-17.8H49.5H0v48.6v61.9c1.7 0.3 3.5 0.4 5.3 0.4c12.4 0 23.1-7.2 28.2-17.7 c4.4 1.9 9.2 2.9 14.3 2.9c20 0 36.1-16.2 36.1-36.1c0-3.7-0.6-7.3-1.6-10.7C97.2 46.5 108.4 33.5 108.4 17.8z",
+        path2:
+          "M54,2.7H8.8H1.9v14.2v33.6c0.8 0.1 1.6 0.2 2.5 0.2c9.4 0 17-7.6 17-17c0-1.2-0.1-2.3-0.3-3.4c3.1 1.5 6.6 2.4 10.3 2.4c13 0 23.5-10.5 23.5-23.5C54.9 6.9 54.6 4.8 54 2.7z",
+      },
+      outerData2: {
         path1:
           "M108.4 17.8c0-6.6-2-12.7-5.4-17.8H49.5H0v48.6v61.9c1.7 0.3 3.5 0.4 5.3 0.4c12.4 0 23.1-7.2 28.2-17.7 c4.4 1.9 9.2 2.9 14.3 2.9c20 0 36.1-16.2 36.1-36.1c0-3.7-0.6-7.3-1.6-10.7C97.2 46.5 108.4 33.5 108.4 17.8z",
         path2:
@@ -379,7 +385,7 @@ export default {
       path1.fill(this.colors[0]);
       path1.size(this.width / 5, null);
       let path2 = outerC1.path(this.outerData1.path2);
-      path2.fill(this.colors[1]);
+      path2.fill(this.colors[2]);
       path2.size((this.width / 5) * 0.6, null);
 
       let outerC2 = outerC1.clone();
@@ -398,7 +404,56 @@ export default {
       let outer = this.outer;
       outer.clear();
       let outerC1 = outer.group();
-      outerC1.rect(60, 60).fill(this.colors[0]);
+      let g = outerC1.group();
+      g.polygon("0,190.773 0,255.272 255.272,0 190.768,0").fill(this.colors[1]);
+      g.polygon("0,197.725 0,255.272 255.272,0 197.721,0.001").fill(
+        this.colors[2]
+      );
+      let g1 = g.group();
+      let g2 = g.group();
+      let g3 = g.group();
+      g1.path(
+        "M55.939,154.469c0,0-8.01,1.354-12.779,8.643c-4.769,7.288,2.609,17.55-2.248,19.892c-4.863,2.337-5.763-12.065-11.974-9.635c-6.207,2.43,3.512,18.635-0.629,21.331c-4.141,2.704-6.388-9.81-11.158-5.939c-4.771,3.871,5.126,15.031,2.428,18.99c-2.697,3.961-11.159,0.359-13.859,5.941c-2.699,5.576,0.089,20.248,9.989,17.012c9.9-3.245,27.453-23.497,34.83-37.896c7.383-14.396,10.171-31.043,8.912-41.31c0,0-1.707,23.851-15.568,43.832c-13.863,19.983-28.712,33.033-31.771,29.971c-3.062-3.057-3.332-9.628,0.089-9.628c3.42,0,9.898-1.44,12.058-6.124c2.163-4.676-4.585-10.893-2.791-12.687c1.804-1.805,4.504,6.48,9.363,2.878c4.858-3.599-0.812-16.83,2.068-18.086c2.883-1.265,3.15,10.166,10.621,6.477c7.471-3.689,3.063-15.303,3.06-19.621C46.582,164.193,50.448,157.439,55.939,154.469z"
+      ).fill(this.colors[0]);
+      g1.circle("2.864")
+        .cx("21.109")
+        .cy("181.651")
+        .fill(this.colors[0]);
+      g1.path(
+        "M66.783,173.593c1.121,1.116,1.122,2.934,0,4.051c-1.118,1.121-2.929,1.116-4.047,0c-1.122-1.117-1.122-2.927,0-4.051C63.854,172.477,65.666,172.477,66.783,173.593z"
+      ).fill(this.colors[0]);
+      g1.path(
+        "M7.53,232.248c1.121,1.116,1.121,2.928,0.001,4.044c-1.116,1.119-2.931,1.124-4.048,0c-1.121-1.116-1.118-2.928,0.001-4.049C4.6,231.127,6.412,231.127,7.53,232.248z"
+      ).fill(this.colors[0]);
+
+      g2.path(
+        "M129.374,81.034c0,0-8.008,1.35-12.778,8.642c-4.773,7.289,2.609,17.548-2.252,19.89c-4.859,2.339-5.758-12.063-11.969-9.632c-6.211,2.432,3.51,18.637-0.629,21.331c-4.141,2.701-6.393-9.807-11.159-5.939c-4.772,3.869,5.132,15.025,2.428,18.984c-2.699,3.968-11.158,0.365-13.86,5.948c-2.699,5.574,0.086,20.249,9.989,17.011c9.901-3.244,27.451-23.496,34.829-37.895c7.383-14.399,10.17-31.05,8.913-41.308c0,0-1.71,23.851-15.57,43.828c-13.859,19.983-28.711,33.031-31.77,29.971c-3.058-3.063-3.33-9.627,0.088-9.627c3.421,0,9.901-1.438,12.063-6.122c2.158-4.684-4.592-10.889-2.792-12.695c1.797-1.796,4.502,6.485,9.355,2.886c4.868-3.602-0.804-16.833,2.079-18.096c2.878-1.257,3.146,10.175,10.617,6.485c7.473-3.689,3.059-15.301,3.062-19.625C120.016,90.756,123.884,84.004,129.374,81.034z"
+      ).fill(this.colors[0]);
+      g2.path(
+        "M96.573,106.189c1.116,1.12,1.116,2.934,0,4.052c-1.121,1.116-2.938,1.118-4.053,0c-1.121-1.121-1.116-2.932,0-4.052C93.636,105.072,95.453,105.07,96.573,106.189z"
+      ).fill(this.colors[0]);
+      g2.path(
+        "M140.222,100.158c1.115,1.116,1.119,2.931-0.005,4.057c-1.114,1.113-2.928,1.113-4.046-0.006c-1.12-1.119-1.117-2.934-0.002-4.046C137.292,99.039,139.1,99.039,140.222,100.158z"
+      ).fill(this.colors[0]);
+      g2.path(
+        "M80.966,158.812c1.121,1.119,1.121,2.931,0,4.047c-1.115,1.121-2.93,1.124-4.048,0c-1.117-1.116-1.117-2.928,0-4.047C78.036,157.691,79.849,157.691,80.966,158.812z"
+      ).fill(this.colors[0]);
+
+      g3.path(
+        "M203.665,6.745c0,0-8.012,1.353-12.779,8.636c-4.771,7.296,2.609,17.555-2.25,19.892c-4.857,2.342-5.76-12.061-11.969-9.632c-6.213,2.433,3.512,18.634-0.629,21.333c-4.143,2.701-6.391-9.811-11.162-5.937c-4.771,3.867,5.132,15.026,2.433,18.987c-2.701,3.963-11.161,0.363-13.865,5.943c-2.699,5.577,0.089,20.252,9.991,17.011c9.903-3.243,27.45-23.494,34.829-37.895c7.381-14.399,10.174-31.051,8.914-41.313c0,0-1.713,23.855-15.572,43.833c-13.863,19.986-28.711,33.033-31.771,29.974c-3.061-3.062-3.331-9.63,0.089-9.63c3.422,0,9.899-1.438,12.059-6.119c2.162-4.679-4.586-10.897-2.787-12.693c1.799-1.799,4.502,6.481,9.359,2.878c4.859-3.596-0.809-16.83,2.072-18.091c2.875-1.254,3.148,10.173,10.617,6.485c7.475-3.69,3.061-15.303,3.064-19.623C194.303,16.464,198.176,9.71,203.665,6.745z"
+      ).fill(this.colors[0]);
+
+      g3.path(
+        "M170.858,31.898c1.121,1.121,1.117,2.936,0.006,4.053c-1.119,1.116-2.934,1.116-4.057,0c-1.119-1.119-1.113-2.936,0.004-4.053C167.926,30.784,169.743,30.782,170.858,31.898z"
+      ).fill(this.colors[0]);
+      g3.path(
+        "M214.508,25.868c1.121,1.121,1.123,2.934,0.004,4.051c-1.119,1.116-2.934,1.118-4.053,0c-1.119-1.118-1.113-2.932,0.004-4.053C211.583,24.749,213.393,24.749,214.508,25.868z"
+      ).fill(this.colors[0]);
+      g3.path(
+        "M155.256,84.521c1.123,1.123,1.123,2.931,0.003,4.048c-1.121,1.121-2.93,1.119-4.05-0.003c-1.118-1.116-1.123-2.927-0.002-4.045C152.325,83.401,154.139,83.401,155.256,84.521z"
+      ).fill(this.colors[0]);
+
+      g.scale(0.7, 0.7, 0, 0);
 
       let outerC2 = outerC1.clone();
       outerC2.addTo(outer);
