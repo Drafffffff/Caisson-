@@ -12,16 +12,16 @@
           <div class @click="outerChange(2)">
             <img src="./assets/outer/2.svg" alt />
           </div>
-          <div class @click="outerChange(1)">
+          <div class @click="outerChange(3)">
             <img src="./assets/outer/1.svg" alt />
           </div>
-          <div class @click="outerChange(1)">
+          <div class @click="outerChange(4)">
             <img src="./assets/outer/1.svg" alt />
           </div>
-          <div class @click="outerChange(1)">
+          <div class @click="outerChange(5)">
             <img src="./assets/outer/1.svg" alt />
           </div>
-          <div class @click="outerChange(1)">
+          <div class @click="outerChange(6)">
             <img src="./assets/outer/1.svg" alt />
           </div>
         </div>
@@ -52,13 +52,13 @@
           <div class @click="midderChange(3)">
             <img src="./assets/midder/3.svg" alt />
           </div>
-          <div class @click="midderChange(1)">
+          <div class @click="midderChange(4)">
             <img src="./assets/midder/1.svg" alt />
           </div>
-          <div class @click="midderChange(1)">
+          <div class @click="midderChange(5)">
             <img src="./assets/midder/1.svg" alt />
           </div>
-          <div class @click="midderChange(1)">
+          <div class @click="midderChange(6)">
             <img src="./assets/midder/1.svg" alt />
           </div>
         </div>
@@ -98,16 +98,16 @@
           <div class @click="innerChange(2)">
             <img src="./assets/inner/2.svg" alt />
           </div>
-          <div class @click="innerChange(1)">
+          <div class @click="innerChange(3)">
             <img src="./assets/inner/1.svg" alt />
           </div>
-          <div class @click="innerChange(1)">
+          <div class @click="innerChange(4)">
             <img src="./assets/inner/1.svg" alt />
           </div>
-          <div class @click="innerChange(1)">
+          <div class @click="innerChange(5)">
             <img src="./assets/inner/1.svg" alt />
           </div>
-          <div class @click="innerChange(1)">
+          <div class @click="innerChange(6)">
             <img src="./assets/inner/1.svg" alt />
           </div>
         </div>
@@ -162,7 +162,7 @@ export default {
         .size(this.width, this.width)
     );
     this.shapes.width = this.width;
-    this.shapes.midder6();
+    this.shapes.outer6();
   },
   methods: {
     outerChange(n) {
@@ -192,11 +192,11 @@ export default {
         drawMidder.push("midder" + this.layer.midder[i].toString());
       }
       let drawInner = "inner" + this.layer.inner.toString();
-      this.shapes[drawOuter]();
       for (let i = 0; i < 3; i++) {
         this.shapes[drawMidder[i]]();
       }
       this.shapes[drawInner]();
+      this.shapes[drawOuter]();
     },
   },
   computed: {
