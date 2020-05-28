@@ -162,7 +162,7 @@ export default {
         .size(this.width, this.width)
     );
     this.shapes.width = this.width;
-    this.shapes.outer6();
+    // this.shapes.inner6();
   },
   methods: {
     outerChange(n) {
@@ -176,7 +176,9 @@ export default {
       this.updateSVG();
     },
     innerChange(n) {
+      this.cleanSVG();
       this.layer.inner = n;
+      console.log(this.layer.inner)
       this.updateSVG();
     },
     cleanSVG() {
@@ -195,8 +197,8 @@ export default {
       for (let i = 0; i < 3; i++) {
         this.shapes[drawMidder[i]]();
       }
-      this.shapes[drawInner]();
       this.shapes[drawOuter]();
+      this.shapes[drawInner]();
     },
   },
   computed: {
